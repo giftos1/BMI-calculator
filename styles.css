@@ -29,7 +29,6 @@ header {
 
 .bmi-body {
     background-color: aquamarine;
-    margin: 20px;
     width: 95%;
     margin: 20px auto;
     text-align: center;
@@ -45,8 +44,13 @@ header {
     font-size: 17px;
 }
 
+.value:hover {
+    background-color: rgb(19, 20, 20);
+}
+
 .info {
     font-size: 24px;
+    margin-top: 5px;
 }
 
 .button {
@@ -54,6 +58,8 @@ header {
     margin-top: 10px;
     background-color: rgb(93, 202, 169);
     border: none;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 .results {

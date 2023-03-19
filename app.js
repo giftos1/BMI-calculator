@@ -23,13 +23,16 @@ function calculateBmi() {
     }
     else if (isNaN(weight) || isNaN(height)) {
         alert("Please enter number values only!")
-        window.location.reload(true); // reload page fully from server and not local cache. 
-        // Leave blank or use false if you want to reload from local cache.
+        window.location.reload();
     }
     else {
-        alert("Please key in positive values!")
-        window.location.reload(true);
+        alert("Please key in valid numbers!")
+        window.location.reload();
     }
+}
+
+function resetPage() {
+    window.location.reload();
 }
 
 

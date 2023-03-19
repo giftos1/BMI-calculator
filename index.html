@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/3f441a95fd.js" crossorigin="anonymous"></script>
     <title>BMI Calculator</title>
 </head>
 <body>
@@ -22,18 +23,19 @@
                 <div class="info">
                     Weight (KG)
                 </div>
-                <label for="weight"><input type="text" class="value" id="weight"></label>
+                <label for="weight"><input type="number" class="value" id="weight">
+                </label>
                 <div class="info">
                     Height (CM)
                 </div>
-                <label for="height"><input type="text" class="value" id="height"></label>
-                <div>
-                    <button type="button" class="button" onclick="calculateBmi()">Calculate BMI</button>
-                </div>
+                <label for="height"><input type="number" class="value" id="height"></label>
+                <button type="button" class="button" onclick="calculateBmi()">Calculate BMI</button>
+                <button type="button" class="button" onclick="resetPage()">Reset</button>
             </div>
             
             <div class="results">
             </div>
+
         </form>
     </main>
     <script src="./app.js"></script>

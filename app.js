@@ -9,10 +9,10 @@ function calculateBmi() {
     if (bmiValue > 0 && bmiValue < 18.5) {
         results.textContent = "Your BMI is " + bmiValue + " hence you are Underweight!";
     }
-    else if (bmiValue > 18.5 && bmiValue < 25) {
+    else if (bmiValue >= 18.5 && bmiValue < 25) {
         results.textContent = "Your BMI is " + bmiValue + " hence you have a Healthy weight:)";
     }
-    else if (bmiValue > 25 && bmiValue < 30) {
+    else if (bmiValue >= 25 && bmiValue < 30) {
         results.textContent = "Your BMI is " + bmiValue + " hence you are overweight but not obese!";
     }
     else if (bmiValue >= 30 && bmiValue < 35 ){
@@ -22,17 +22,17 @@ function calculateBmi() {
         results.textContent = "Your BMI is " + bmiValue + " hence you are Obese class II!";
     }
     else if (isNaN(weight) || isNaN(height)) {
-        alert("Please enter number values only!")
-        window.location.reload();
+        alert("Please enter number values only!");
+        resetPage();
     }
     else {
-        alert("Please key in valid numbers!")
-        window.location.reload();
+        alert("Please key in valid numbers!");
+        resetPage();
     }
 }
 
 function resetPage() {
-    window.location.reload();
+    return window.location.reload();
 }
 
 

@@ -31,6 +31,7 @@ function calculateBmi() {
     }
 }
 
+
 function resetPage() {
     return window.location.reload();
 }
